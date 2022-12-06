@@ -5,7 +5,7 @@ Here we document the base model which one can use for inference (suggestion gene
 We provide the base model, along with several specialized models which we explain below, on Dropbox (as they are too large to store here).
 We also provide code (the "beam search") designed to perform inference on gaps of more than one token, along with the training code which one can use to fine-tune the models, provided they have the recommended hardware specifications.
 
-While beam search and stochastic gradient descent have been well-explored in the literature, corruption detection is a significantly more complicated task, and to our knowledge, the algorithm we use is explained neither in existing literature nor in the body of the paper.
+While beam search and stochastic gradient descent have been well-explored in the literature, corruption detection is a significantly more complicated task, and to our knowledge, the algorithm we implement is explained neither in existing literature nor in the body of the paper.
 For this reason, we do not include the code here, but can provide it upon request.
 
 ## System requirements
@@ -19,7 +19,7 @@ Conda >=4.10.1, one can execute<br/>
 to initialize the environment. 
 
 ### System recommendations for training
-Logion was trained on a research computing cluster with 2.8 GHz Intel Ice Lake nodes for several days. If you intend to fine-tune, it's recommended that your processor has at least 128 GB of memory and a GPU.
+Logion was trained on a research computing cluster with 2.8 GHz Intel Ice Lake nodes for several days. If you intend to fine-tune, it's recommended that your processor has at least 128 GB of memory and a GPU. With a Nvidia K80 / T4 (standard on Google Colab), beam search should take no more than 10 seconds for spans of up to 10 tokens, with current specifications.
 
 ## Model
 
