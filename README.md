@@ -1,6 +1,6 @@
 # README
 
-Logion is a system for infilling text and detecting corruptions in ancient Greek works. 
+Logion is a system for infilling text and detecting corruptions in ancient and medieval Greek works. 
 Here we document the base model which one can use for inference (suggestion generation for infilling unknown gaps of text). 
 We provide the base model, along with several specialized models which we explain below, on Dropbox (as they are too large to store here).
 We also provide code (the "beam search") designed to perform inference on gaps of more than one token, along with the training code which one can use to fine-tune the models, provided they have the recommended hardware specifications. To perform inference on user-provided sample text, see <i>§ Setup Guide</i> below.
